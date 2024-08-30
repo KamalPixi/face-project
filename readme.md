@@ -1,4 +1,6 @@
 # Build for linux
+Face verify/comparison python docker project.
+
 - docker build --platform linux/amd64 -t flask-faceproject .
 - or docker build -t flask-faceproject .
 - docker save -o image_name.tar flask-faceproject
