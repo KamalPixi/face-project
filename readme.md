@@ -8,7 +8,7 @@ Face verify/comparison python docker project.
 - docker run -p 5000:5000 flask-faceproject
 
 
-- POST http://139.59.113.219:5000/compare
+- POST http://x.x.x.x:5000/compare
 - multipart/form-data
 - image_1 => image binary
 - image_2 => image binary
