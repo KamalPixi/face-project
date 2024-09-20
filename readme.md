@@ -1,14 +1,13 @@
 # Build for linux
 Face verify/comparison python docker project.
 
-- docker build --platform linux/amd64 -t flask-faceproject .
-- or docker build -t flask-faceproject .
-- docker save -o image_name.tar flask-faceproject
-- docker load -i /path/to/destination/image_name.tar
-- docker run -p 5000:5000 flask-faceproject
+<!-- to start -->
+docker compose up -d
+<!-- to stop -->
+docker compose down
 
 
-- POST http://x.x.x.x:5000/compare
+- POST http://x.x.x.x:8443/compare
 - multipart/form-data
 - image_1 => image binary
 - image_2 => image binary

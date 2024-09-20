@@ -1,0 +1,22 @@
+services:
+  # face comparison server
+  face_server:
+    image: proconnect_face_auth
+    ports:
+      - "8443:8443"
+    networks:
+      - proconnect_face_auth_network
+
+  # nginx server
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile.nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - proconnect_face_auth_network
+
+networks:
+  proconnect_face_auth_network:
